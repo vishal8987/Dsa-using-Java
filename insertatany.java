@@ -1,5 +1,4 @@
-// Pakage com.company;  
-import java.util.*;
+
 public class insertatany {
     class Node{
         int value;
@@ -11,6 +10,7 @@ public class insertatany {
         }
     }
     public  Node head=null;
+    public Node tail=null;
     
     public void insertAtFirst(int val)
     {
@@ -50,7 +50,7 @@ public class insertatany {
             System.out.println("list is empty");
             return ;
         }
-        System.out.println("Adding new node rom here:");
+        System.out.println("Adding new node from here :");
         while(current!=null)
         {
             System.out.print(current.value +" ");

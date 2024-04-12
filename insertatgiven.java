@@ -10,10 +10,12 @@ public class insertatgiven {
     }
     public Node head=null;
     public Node tail=null;
+    public static int size;
 // insert at first position:-->
     public void insertfirst(int value)
     {
         Node s=new Node(value);
+        size++;
         if(head==null)
         {
             head=s;
@@ -26,6 +28,7 @@ public class insertatgiven {
     public void insertatlast(int k)
     {
         Node vis=new Node(k);
+        size++;
         if(head==null){
             head=vis;
             tail=vis;
@@ -43,6 +46,7 @@ public class insertatgiven {
             return;
         }
         Node current=head;
+        size++;
         for(int i=1;i<pos;i++)
         {
             current=current.next;
@@ -87,6 +91,7 @@ public class insertatgiven {
        System.out.println("new");
          vis.insertatuser(23 ,0);
         vis.Display();
+        System.out.println(insertatgiven.size);
         
 
     }
